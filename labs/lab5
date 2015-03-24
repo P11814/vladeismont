@@ -73,13 +73,14 @@ namespace ConsoleApplication110
             public void printcomplex()
             {
                 Console.WriteLine(string.Format("комплексное число числа ({0},{1}) ", this.x, this.y) + string.Format("= ({0},{1})", -y, x));
+                // какой-то странный формат комплексного числа. правильно 2 + 3i
             }
         }
         static void Main(string[] args)
         {
             Complex z = new Complex(1, 1);
             Complex z1;
-            z1 = z - (z * z * z - 1) / (3 * z * z);
+            z1 = z - (z * z * z - 1) / (3 * z * z); // и зачем вы копируете чужой код? это было у Гали
             Console.WriteLine("z1={0}", z1);
             z1.printcomplex();
             Complex t = new Complex(49, 37);
@@ -90,6 +91,7 @@ namespace ConsoleApplication110
     }
 }
 ---------------------------------------------
+// нет сокращения дробей
 using System;
 using System.Collections.Generic;
 using System.Linq;
