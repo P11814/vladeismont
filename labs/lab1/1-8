@@ -147,10 +147,10 @@ E F G H I и т.д.
 
             // -> example 8
             //Рассчитать сумму чисел 100 Фибоначчи : 1, 1, 2, 3, 5, 8 ..   Xn=X(n-1)+X(n-2)
-            long Xn=1, Xn1=0, Xn2=1, Xnext;
+            long Xn=0, Xn1=1, Xn2=1, Xnext;
             for (int i = 0; i < 100; i++)
             {
-                Xn += Xn1 + Xn2;
+                Xn += Xn2;
                 Xnext = Xn1 + Xn2;
                 Xn1 = Xn2;
                 Xn2 = Xnext;
