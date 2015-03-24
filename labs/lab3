@@ -1,4 +1,4 @@
-using System;
+using System; 
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 /*1.	Необходимо обернуть повторяющиеся слово в <strong> элемент. Например, строка  this is is a test должна быть преобразована в  this is <strong>is</strong> a test.*/
